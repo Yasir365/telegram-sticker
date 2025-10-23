@@ -11,7 +11,7 @@ export const StickerCard: React.FC<StickerCardProps> = ({ sticker, variant = 'la
     const isLarge = variant === 'large';
 
     return (
-        <div className={`flex-shrink-0 ${isLarge ? 'w-100' : 'w-48'} mr-4 bg-app-white rounded-xl shadow-md overflow-hidden`}>
+        <div className={`flex-shrink-0 mr-4 bg-app-white rounded-xl shadow-md overflow-hidden`}>
             <div className="relative">
                 {isLarge && sticker.isHot && (
                     <div className="absolute top-4 left-4 px-3 py-1 text-sm font-semibold text-app-white rounded-full bg-gradient-to-r from-hot-start to-hot-end">
