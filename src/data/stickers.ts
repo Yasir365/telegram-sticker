@@ -13,7 +13,7 @@ export const stickers: Sticker[] = [
     {
         id: '1',
         name: 'Punk Spider Man Sticker',
-        image: 'https://via.placeholder.com/300x300?text=Spider+Man', // Replace with actual URLs or assets
+        image: '/images/s1.png', // Replace with actual URLs or assets
         rarity: 'Epic',
         sold: 120,
         total: 154,
@@ -23,7 +23,7 @@ export const stickers: Sticker[] = [
     {
         id: '2',
         name: 'Iron Hero',
-        image: 'https://via.placeholder.com/300x300?text=Iron+Hero',
+        image: '/images/s2.png',
         rarity: 'Rare',
         sold: 50,
         total: 100,

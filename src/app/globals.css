@@ -5,22 +5,31 @@
   --foreground: #171717;
 }
 
-/* @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-app-white: #fff;
+  --color-app-white-black: #000;
+  --color-app-white-lite: rgba(255, 255, 255, 0.8);
+  --color-app-black-lite: rgba(0, 0, 0, 0.6);
+  --color-app-blue: rgba(0, 93, 215, 1);
+  --color-app-blue-lite: rgba(0, 133, 255, 1);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
+  background-color: var(--background);
+}
+
+.swiper {
+  padding: 4px 0 !important;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 0px) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
