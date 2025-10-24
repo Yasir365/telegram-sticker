@@ -1,86 +1,13 @@
 import Header from '@/layout/Header';
 import { BottomNav } from '@/layout/BottomNav';
-import { SlideData, Sticker } from '@/types/types';
+import { SlideData } from '@/types/types';
 import { StickerCard } from '@/components/StickerCard';
 import { TrendingSection } from '@/components/TrendingSection';
 import Slider from '@/components/Slider';
 import React from 'react';
 import HeadingAndLink from '@/components/HeadingAndLink';
+import { punkSpidermanStickers, topSellingStickers, trendingNowStickers } from '@/data/data';
 
-const punkSpidermanStickers: Sticker[] = [
-    {
-        imageSrc: '/images/main.png',
-        title: 'Punk Spider-man Sticker',
-        description: 'Bold and rebellious, this Punk Spider-Man sticker showcases Spidey’s edgy side — electric guitar, spikes, and pure attitud...',
-        sold: 120,
-        total: 134,
-        isHot: false
-    },
-    {
-        imageSrc: '/images/main2.png',
-        title: 'Iron Hero Banner',
-        description: 'A classic, bold, and powerful depiction of the armored Avenger in his iconic suit.',
-        sold: 95,
-        total: 110,
-        isHot: true
-    },
-];
-
-const topSellingStickers: Sticker[] = [
-    {
-        imageSrc: '/images/s1.png',
-        title: 'spidey hug',
-        description: 'The iconic moment of three Spideys hugging, a fan-favorite emotional piece.',
-        sold: 80,
-        total: 106,
-        isHot: true
-    },
-    {
-        imageSrc: '/images/s2.png',
-        title: 'Iron Hero',
-        description: 'A classic, bold, and powerful depiction of the armored Avenger in his iconic suit.',
-        sold: 80,
-        total: 106,
-        isHot: true
-    },
-    {
-        imageSrc: '/images/s1.png',
-        title: 'spidey hug',
-        description: 'The iconic moment of three Spideys hugging, a fan-favorite emotional piece.',
-        sold: 80,
-        total: 106,
-        isHot: true
-    },
-    {
-        imageSrc: '/images/s2.png',
-        title: 'Iron Hero',
-        description: 'A classic, bold, and powerful depiction of the armored Avenger in his iconic suit.',
-        sold: 80,
-        total: 106,
-        isHot: true
-    },
-];
-
-const trendingNowStickers: Sticker[] = [
-    {
-        imageSrc: '/images/s1.png',
-        title: 'Galactus Sticker',
-        sold: 80,
-        total: 106,
-    },
-    {
-        imageSrc: '/images/s2.png',
-        title: 'Vintage Ororo Munroe',
-        sold: 80,
-        total: 106,
-    },
-    {
-        imageSrc: '/images/s1.png',
-        title: 'Wolverine - Savage',
-        sold: 80,
-        total: 106,
-    },
-];
 
 const mainSliderData: SlideData[] = punkSpidermanStickers.map((sticker, index) => ({
     id: index,

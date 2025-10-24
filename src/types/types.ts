@@ -22,3 +22,13 @@ export interface SliderProps {
     showPagination?: boolean;
     className?: string;
 }
+
+export interface FiltersProps {
+    data: Array<
+        {
+            id: number;
+            name: string;
+        }
+    >;
+    active: number;
+}
